@@ -422,6 +422,9 @@ const protienHighToLow = (data,property)=>{
 
 // console.log(protienHighToLow(data,"protiens"));
 
+
+
+// list all the food items with highest cab content to lowest
 const protienLowToHigh = (data,property) => {
     data.sort((a, b) => {
         return a[property] - b[property]
@@ -429,4 +432,4 @@ const protienLowToHigh = (data,property) => {
     return data;
 }
 
-// console.log(protienLowToHigh(data,"protiens"));
+console.log(protienLowToHigh(data,"cab"));
